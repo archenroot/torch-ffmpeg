@@ -8,6 +8,6 @@ ENDIF()
 FIND_PACKAGE(Torch REQUIRED)
 
 SET(src)
-SET(luasrc init.lua OptionParser.lua Profiler.lua)
+SET(luasrc init.lua)
 
 ADD_TORCH_PACKAGE(ffmpeg "${src}" "${luasrc}" "System")
